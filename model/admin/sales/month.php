@@ -17,7 +17,7 @@ $m1 = $month[0];
 $m2 = $month[1];
 // echo $m1;
 $sql = "select sum(quantity* (food_price-(food_price*food_discount)/100)) 
-     as b from cust_order inner join food on cust_order.food_id = food.food_id YEAR(dates) = '$m1' ";
+     as b from cust_order inner join food on cust_order.food_id = food.food_id where MONTH(dates) = '$m2' and YEAR(dates) = '$m1' ";
 
 // $sql = "select MONTH(dates) as b from cust_order";
 

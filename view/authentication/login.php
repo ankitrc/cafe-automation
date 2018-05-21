@@ -1,6 +1,6 @@
 <form action="" method="post">
     id: <br>
-    <input type="text" name="id" id="" required>
+    <input type="number" name="id" id="" value = '1' required>
     <br> <br>
     password: <br>
     <input type="password" name="pass" id="" required>

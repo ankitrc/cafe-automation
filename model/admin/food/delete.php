@@ -2,7 +2,7 @@
     // session_start();
     // echo $_SESSION['role'];
     // $role = $_SESSION['role'];
-    include_once '../../../dbn.php';
+    include_once '../../../model/db/dbn.php';
     if($_SESSION['role']!=1){
         // include "../index.php";
         die('died in admin delete.php');

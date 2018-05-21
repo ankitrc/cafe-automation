@@ -9,7 +9,7 @@
         include '../../../view/admin/add_staff.php';
     }
     if(isset($_POST['add_staff_submit'])){
-        include '../../../model/admin/food/add_staff.php';
+        include '../../../model/admin/staff/add_staff.php';
         echo "hellooo";
     }
     else

@@ -12,7 +12,7 @@
     name: <br>
     <input type="text" name="cust_name" id="" required> <br> <br>
     mobile no.: <br>
-    <input type="text" name="mob_no" id="">
+    <input type="text" name="mob_no">
     <br><br>
     table no.: <br>
     <select name = "table_no" > 

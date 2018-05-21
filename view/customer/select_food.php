@@ -27,11 +27,11 @@
 
 <form action="" method="post">
     food id: <br>
-    <input type="text" name="food_id" id="" required> <br> <br>
+    <input type="number" name="food_id" id="" required> <br> <br>
     food name: <br>
     <input type="text" name="food_name" id="" required> <br> <br>
     food qtt: <br>
-    <input type="text" name="food_qtt" id="" required> <br> <br>
+    <input type="number" name="food_qtt" id="" required> <br> <br>
     <!-- food category: <br> -->
     <!-- <input type="text" name="food_category" id=""> <br> <br> -->
     <!-- food price: <br> -->

@@ -22,12 +22,12 @@
 
             }      
             else{
-                echo "ban gaya popat <br>";
+                // echo "ban gaya popat <br>";
                 echo $conn->error;
             }  
         }
         else{
-            echo "cut gaya <br>";
+            echo "error <br>";
         }
 
     }

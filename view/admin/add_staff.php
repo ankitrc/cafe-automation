@@ -8,7 +8,7 @@
     staff name: <br>
     <input type="text" name="staff_name" id="" required><br> <br>
     staff_id: <br>
-    <input type="text" name="staff_id" id="" required>
+    <input type="number" name="staff_id" id="" required>
     <br> <br>
     staff_password:
     <br>
