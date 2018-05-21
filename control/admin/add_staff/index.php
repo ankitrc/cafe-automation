@@ -31,5 +31,8 @@
     else if($_SESSION['act']=="sales"){
         include 'sales.php';
     }
+    else if($_SESSION['act'] == "order_offer"){
+        require 'order_offer.php';
+    }
 
    

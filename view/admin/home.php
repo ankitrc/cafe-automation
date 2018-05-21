@@ -17,5 +17,6 @@
     <button name = "update_food_btn" type="submit">update food</button>
     <button name = "bill" type="submit">bill</button>
     <button name = "sales" type="submit">sales</button>
+    <button name = "order_offer" type="submit">order_offer</button>
 
 </form>

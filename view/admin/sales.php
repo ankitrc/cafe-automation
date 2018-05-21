@@ -1,3 +1,23 @@
+
+
+<?php
+    if(!isset($_SESSION['role'])){
+        die('not autorized');
+    }
+    else if($_SESSION['role'] != 1){
+        die('died in view admin add_food.php');
+    }
+
+    $get = "select food_id , food_name from food";
+    $result = $conn->query($get);
+    $option = '';
+     while($row = $result->fetch_assoc())
+    {
+      $option .= '<option value = "'.$row['food_id'].'">'.$row['food_name'].'</option>';
+    }
+?>
+
+
 <form action="" method="post">
     month:
     <input type="month" name="mon" id="" required>
@@ -22,7 +42,9 @@
 
 <form action="" method="post">
     food id: <br>
-    <input type="text" name="food_id" id="" required> <br> <br>
+    <select name = "food_id" > 
+        <?php echo $option; ?>
+    </select> <br> <br>
     <input type="submit" name="food_id_sales_submit" id="" value = "food_id">
 
 </form>

@@ -45,6 +45,12 @@ if($_SESSION['role']==1){
         header('location:add_staff');
         // include '../../admin/bill/index.php';
     }
+
+    else if(isset($_POST['order_offer'])){
+        $_SESSION['act'] = 'order_offer';
+
+        header('location:add_staff');
+    }
     // else{
     
     // }  
