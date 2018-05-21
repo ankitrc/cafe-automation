@@ -14,4 +14,7 @@
         require '../../../model/admin/sales/year.php';
     }
 
+    if(isset($_POST['food_id_sales_submit'])){
+        require '../../../model/admin/sales/food_id_sales.php';
+    }
     require '../../../view/admin/sales.php';
