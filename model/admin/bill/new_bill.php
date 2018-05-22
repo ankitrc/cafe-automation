@@ -56,7 +56,7 @@
         echo '</tr>';
 
 
-
+        echo '<b>bill no.:' .$cid . '</b>';
         // echo 'food_name'. '  '.'food_price'.  '   ' . 'food_qtt'. '     ' . 'food_discount' . '  ' . "tot" .'<br>';
         while($row = $result->fetch_assoc()){
                     $food_new_price = $row['price']-($row['price']*$row['dsc'])/100;

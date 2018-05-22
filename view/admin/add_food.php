@@ -7,6 +7,11 @@
     }
 ?>
 
+<head>
+    <link rel="stylesheet" href="../../../view/css/admin_staff.css">
+</head>
+
+
 <form action="" method="post">
     food id: <br>
     <input type="number" name="food_id" id="" required><br> <br>

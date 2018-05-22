@@ -6,6 +6,8 @@
         header('loacation : ../');
     }
     else{
+
+        // require '../model/basic_opr/see_order.php';
         // die('not yet');
         if($_SESSION['role'] == 1){
             // die('not yet 1');
@@ -28,8 +30,14 @@
             else if(isset($_POST['staff_submit'])){
                 require '../model/authentication/login.php';
             }
-            require '../view/customer/details.php';
-            require '../view/authentication/login.php';
+            require '../view/switch.php';
+            if(isset($_POST['admin'])){
+                require '../view/authentication/login.php'; 
+            }
+            else{
+                require '../view/customer/details.php';
+                
+            }
         }
 
         if($_SESSION['role'] == 1){

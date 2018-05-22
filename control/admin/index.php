@@ -7,6 +7,8 @@ if(!isset($_SESSION['role'])){
 // include 'add_staff/logout.php';
 if($_SESSION['role']==1){
     include '../../view/admin/home.php';
+    require_once '../../model/db/dbn.php';
+    require '../../model/basic_opr/see_order.php';
     if(isset($_POST['add_staff_btn'])){
         echo 'add staff <br>';
         // include '../view/admin/add_staff.php';

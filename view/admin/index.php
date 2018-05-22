@@ -17,6 +17,12 @@
     }
 ?>
 
+
+<head>
+    <link rel="stylesheet" href="../../../view/css/tables.css">
+    <link rel="stylesheet" href="../../../view/css/major.css">
+</head>
+
 <form action="" method="post"> 
     <br>
     table_no: <br> 
@@ -24,7 +30,7 @@
     
      <br>
   
-    <select name = "table_no"> 
+    <select name = "table_no" required> 
         <?php echo $option; ?>
     </select>
     <br> <br>

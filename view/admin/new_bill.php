@@ -17,6 +17,11 @@
     }
 ?>
 
+<head>
+    <link rel="stylesheet" href="../../../view/css/major.css">
+    <link rel="stylesheet" href="../../../view/css/tables.css">
+</head>
+
 <form action="" method="post"> 
     <br>
     order id: <br> 

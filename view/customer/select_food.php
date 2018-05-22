@@ -1,32 +1,81 @@
+<head>
+    <link rel="stylesheet" href="../../view/css/tables.css">
+</head>
+
+
+<body id="sel">
+
 <?php
     // require '../model/db/dbn.php';
     $get = "select * from food;";
     $result = $conn->query($get);
     $option = '';
-     while($row = $result->fetch_assoc())
-    {
-      $option .= '<input type = "checkbox" name = "check_list[]" value = '.$row['food_id'].'>';
-      $option .='<label>'.$row['food_name']."   ".$row['food_price']."    ".$row['food_discount'].'<label>';
-      $option .= '<input type="number" name= "food_qtt[]" value = "1">';
+    $option .= "<table>";
+    $option .= '<tr>';
+        $option .= '<th>';
+            $option .= 'select';
+        $option .= '</th>';
+        
+        $option .= '<th>';
+            $option .= 'food_name';
+        $option .= '</th>';
 
-      $option .= "<br>";
+        
+        $option .= '<th>';
+            $option .= 'price';
+        $option .= '</th>';
+
+        $option .= '<th>';
+            $option .= 'discount';
+        $option .= '</th>';
+
+        $option .= '<th>';
+            $option .= 'no. of items';
+        $option .= '</th>';
+
+
+    $option .= '</tr>';
+     while($row = $result->fetch_assoc())
+    {   $option .= "<tr>";
+        $option .= '<td>';
+      $option .= '<input type = "checkbox" name = "check_list[]" value = '.$row['food_id'].'>'.'</td>';
+      $option .='<label>'. '<td>'.$row['food_name'].'</td>'.'<td>'.$row['food_price'].'</td>'.'<td>'
+      .$row['food_discount'].'</td>'.'<label>';
+      $option .= '<td>';
+      $option .= '<input type="number" name= "food_qtt[]" value = "0">';
+      $option .= '</td>';
+      $option .= "</tr>";
     }
+    $option . '</table>';
+    // $option .= '<br>';
+    // include '../../view/css/customer.css';
 ?>
 
 
-
-<form action="" method="post">
-    <?php
-        echo $option;
-    ?>
-    <input type="submit" name="order_submit" value="Submit">
-</form>
+<head>
+<link rel="stylesheet" type="text/css" href='../../view/css/customer.css'>
+</head>
 
 
-<form action="" method="post">
-    <input type="submit" name="done" id="" value = "done">
-    <input type="submit" name="payment" id="" value = "payment">
-</form>
+
+    <div>
+    <form action="" method="post">
+        <?php
+            echo $option;
+        ?>
+        <br>
+        <input type="submit" name="order_submit" value="order">
+    </form>
+
+
+    <form action="" method="post">
+        <input type="submit" name="done" id="" value = "done">
+        <input type="submit" name="payment" id="" value = "payment">
+        <br> <br>
+    </form>
+</div>
+
+</body>
 
 
 <!-- <form action="" method="post">

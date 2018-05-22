@@ -8,17 +8,29 @@
     }
 ?>
 
-<form action="" method="post">
-    name: <br>
-    <input type="text" name="cust_name" id="" required> <br> <br>
-    mobile no.: <br>
-    <input type="text" name="mob_no">
-    <br><br>
-    table no.: <br>
-    <select name = "table_no" > 
-        <?php echo $option; ?>
-    </select>
-    <!-- <input type="text" name="table_no" id=""> <br> <br> -->
-    <input type="submit" name="details_submit" id="">
+<head>
+    <link rel="stylesheet" href="../view/css/admin_staff.css">
+    <!-- <link rel="stylesheet" href="../view/css/customer.css"> -->
+</head>
 
-</form>
+<body>
+    
+
+    <form action="" method="post">
+        name: <br>
+        <input type="text" name="cust_name" id="" required> <br> <br>
+        mobile no.: <br>
+        <input type="text" name="mob_no">
+        <br><br>
+        table no.: <br>
+        <select name = "table_no" > 
+            <?php echo $option; ?>
+        </select>
+        <!-- <input type="text" name="table_no" id=""> <br> <br> -->
+        <br> 
+        <input type="submit" name="details_submit" id="">
+        <br> <br>
+    </form>
+
+
+</body>

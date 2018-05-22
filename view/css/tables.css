@@ -1,0 +1,13 @@
+table{
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td,tr,th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}

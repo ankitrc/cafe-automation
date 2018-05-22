@@ -46,7 +46,10 @@
         $food_ids = $_POST['check_list'];
         $table_no = $_SESSION['table_no'];
         
-
+        echo '<br>';
+        // foreach($food_qtts as $food_id){
+        //     echo $food_id . '<br>';
+        // }
         $today =  date("Y-m-d");
         for($i = 0; $i < count($food_ids); $i++){
             $food_id = $food_ids[$i];

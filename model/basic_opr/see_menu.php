@@ -18,30 +18,30 @@
         }
 
         echo '<table>';
-        echo '<tr>';
-            echo '<td>';
-                echo 'id';
-            echo '</td>';
-            echo '<td>';
-                echo 'food_name';
-            echo '</td>';
-            echo '<td>';
-                echo 'food_category';
-            echo '</td>';
-            echo '<td>';
-                echo 'food_price';
-            echo '</td>';
-            echo '<td>';
-                echo 'food_discount';
-            echo '</td>';
+            echo '<tr>';
+                echo '<td>';
+                    echo 'id';
+                echo '</td>';
+                echo '<td>';
+                    echo 'food_name';
+                echo '</td>';
+                echo '<td>';
+                    echo 'food_category';
+                echo '</td>';
+                echo '<td>';
+                    echo 'food_price';
+                echo '</td>';
+                echo '<td>';
+                    echo 'food_discount';
+                echo '</td>';
 
-        echo '</tr>';
+            echo '</tr>';
 
         // if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()){
                 echo '<td>' . $row['food_id'].'</td>' . '<td>' . $row['food_name'].
                 '</td>' . '<td>' . $row['food_category'].'</td>' . 
-                '<td>' . $row['food_price'].'</td>' . '<td>' . $row['food_discount'].'<td>'  ;
+                '<td>' . $row['food_price'].'</td>' . '<td>' . $row['food_discount'].'</td>'  ;
                 echo '</tr>';
             }
             echo "</table>";

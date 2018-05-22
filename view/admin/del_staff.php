@@ -10,16 +10,26 @@
     }
 ?>
 
-<form action="" method="post"> 
-    <br>
-    id: <br> 
-        <!-- <input type="text" name="id" id=""> -->
+<head>
+    <link rel="stylesheet" href="../../../view/css/major.css">
+</head>
+
+<body>
     
-     <br>
-  
-    <select name = "id"> 
-        <?php echo $option; ?>
-    </select>
-    <br> <br>
-    <input type="submit" name="del_staff_submit" id=""> <br>
-</form>
+
+
+    <form action="" method="post"> 
+        <br>
+        id: <br> 
+            <!-- <input type="text" name="id" id=""> -->
+        
+        <br>
+    
+        <select name = "id"> 
+            <?php echo $option; ?>
+        </select>
+        <br> <br>
+        <input type="submit" name="del_staff_submit" id=""> <br>
+    </form>
+
+</body>

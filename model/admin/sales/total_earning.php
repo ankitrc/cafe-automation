@@ -8,16 +8,10 @@ if(isset($_SESSION['role'])  != 1){
     die('not autorized');
 }
 
-if(isset($_POST['year_submit'])){
-    $today = $_POST['year'];
-    // $today = $_POST['mon'];
-    $month = split("-",$today);
-    $m1 = $month[0];
-    $m2 = $month[1]; 
+if(isset($_POST['total_earning_submit'])){
 
+    $sql = "select distinct order_cid from cust_order ";
     $total = 0;
-
-    $sql = "select distinct order_cid from cust_order where YEAR(dates) = '$m1' ";
 
     if($result = $conn->query($sql)){
         // echo 'done <br>';
@@ -92,12 +86,13 @@ if(isset($_POST['year_submit'])){
 
         }
         // echo 'hey';
-    }
 
-    echo '<b>total earning of year '.$m1 . '   : '.$total.'</b>';  
+}
+    echo '<b> total earnings: '.$total.'</b>';
 
 
 
+    
 }
 
 ?>

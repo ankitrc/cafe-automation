@@ -7,6 +7,22 @@
 
 ?>
 
+<head>
+    <style>
+        button{
+            padding: 15px 25px;
+            font-size: 10px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #3CBC8D;
+            border: none;
+            /* border-radius: 15px; */
+            /* box-shadow: 0 9px #999; */
+        }
+    </style>
+</head>
 
 <form action="" method="post">
     <button name = "home" type="submit">home</button>
