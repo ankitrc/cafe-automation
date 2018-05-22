@@ -6,10 +6,11 @@
     }
     echo 'ehy';
     if(!isset($_POST['add_staff_submit'])){
-        include '../../../view/admin/add_staff.php';
+        include '../../view/admin/add_staff.php';
     }
     if(isset($_POST['add_staff_submit'])){
-        include '../../../model/admin/staff/add_staff.php';
+        include '../../model/admin/staff/add_staff.php';
+        $_SESSION['act'] = 'nothing';
         echo "hellooo";
     }
     else

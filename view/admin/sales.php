@@ -1,4 +1,12 @@
+<?php
+    $years = array('2010','2011','2012','2017','2018');
 
+    $option2 = '';
+    foreach($years as $year){
+        $option2 .= '<option value = "'.$year.'">'.$year.'</option>';
+    }
+
+?>
 
 <?php
     if(!isset($_SESSION['role'])){
@@ -18,8 +26,8 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="../../../view/css/major.css">
-    <link rel="stylesheet" href="../../../view/css/tables.css">
+    <link rel="stylesheet" href="../../view/css/major.css">
+    <link rel="stylesheet" href="../../view/css/tables.css">
     <style>
         input[type=date],input[type=month]{
             padding: 15px 25px;
@@ -39,8 +47,8 @@
 <div>
     <form action="" method="post">
         month: <br>
-        <input type="month" name="mon" id="" required>
-        <br> <br>
+        <input type="month" name="mon" id="" value = "2018-05" required>
+        <!-- <br> <br> -->
         <input type="submit" name="month_submit" id=""  value = "month sale">
 
 
@@ -49,7 +57,8 @@
 <div>
     <form action="" method="post">
         date: <br>
-        <input type="date" name="day" id="" required> <br> <br>
+        <input type="date" name="day" id="" required> 
+        <!-- <br> <br> -->
         <input type="submit" name="day_submit" id="" value = "day sale">
 
     </form>
@@ -58,8 +67,27 @@
 <div>
     <form action="" method="post">
         year: <br>
-        <input type="month" name="year" id="" required> <br> <br>
+        <!-- <input type="month" name="year" id="" required> -->
+         <!-- <br> <br> -->
+         <select name="year" id="">
+            <?php echo $option2; ?>
+         </select>
         <input type="submit" name="year_submit" id="" value = "year sale">
+    </form>
+</div>
+
+
+
+<div>
+
+    <form action="" method="post">
+        food id: <br>
+        <select name = "food_id" > 
+            <?php echo $option; ?>
+        </select> 
+        <!-- <br> <br> -->
+        <input type="submit" name="food_id_sales_submit" id="" value = "food_id">
+
     </form>
 </div>
 
@@ -68,17 +96,5 @@
         total earning: <br>
         <!-- <input type="month" name="year" id="" required> <br> <br> -->
         <input type="submit" name="total_earning_submit" id="" value = "total earning">
-    </form>
-</div>
-
-<div>
-
-    <form action="" method="post">
-        food id: <br>
-        <select name = "food_id" > 
-            <?php echo $option; ?>
-        </select> <br> <br>
-        <input type="submit" name="food_id_sales_submit" id="" value = "food_id">
-
     </form>
 </div>

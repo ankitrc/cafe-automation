@@ -6,7 +6,7 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="../../../view/css/admin_staff.css">
+    <link rel="stylesheet" href="../../view/css/admin_staff.css">
 </head>
 <form action="" method="post">
     staff name: <br>

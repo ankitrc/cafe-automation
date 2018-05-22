@@ -19,7 +19,7 @@
     <div>
         <form action="" method="post">
             <button name = "customer" type="submit">customer</button>    
-            <button name = "admin" type="submit">admin</button>
+            <button name = "admin" type="submit">login</button>
             
         </form>
     </div>

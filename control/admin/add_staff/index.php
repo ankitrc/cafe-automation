@@ -1,11 +1,11 @@
 <?php
-    echo 'welcome to add staff';
-    session_start();
-    include_once '../../../model/db/dbn.php';
+    // echo 'welcome to add staff';
+    // session_start();
+    include_once '../../model/db/dbn.php';
     if(!isset($_SESSION['role'])){
         header('location:../../');
     }
-    include 'logout.php';
+    
     if($_SESSION['role'] != 1){
         die('not autorized');
     }
@@ -34,5 +34,7 @@
     else if($_SESSION['act'] == "order_offer"){
         require 'order_offer.php';
     }
+
+    include 'logout.php';
 
    

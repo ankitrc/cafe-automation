@@ -18,6 +18,23 @@
         }
         if($result->num_rows > 0){
 
+            echo '<table>';
+            echo '<tr>';
+                echo '<th>';
+                echo 'bill num:';
+                echo '</th>';
+                echo '<th>';
+                    echo 'food items:';
+                echo '</th>';
+                echo '<th>';
+                    echo 'food prices:';
+                echo '</th>';
+                echo '<th>';
+                    echo 'total:';
+                echo '</th>';
+            echo '</tr>';
+            echo '</table>';
+
             while($row = $result->fetch_assoc()){
                 $ccid = $row['order_cid'];
                 $foods = '';
@@ -33,21 +50,7 @@
                 }
                 $x = 0;
                 $prices = '';
-                echo '<table>';
-                echo '<tr>';
-                    echo '<th>';
-                    echo 'bill num:';
-                    echo '</th>';
-                    echo '<th>';
-                        echo 'food items:';
-                    echo '</th>';
-                    echo '<th>';
-                        echo 'food prices:';
-                    echo '</th>';
-                    echo '<th>';
-                        echo 'total:';
-                    echo '</th>';
-                echo '</tr>';
+
                 while($row1 = $result1->fetch_assoc()){
                     $price = ($row1['food_price'] - ($row1['food_price']*$row1['food_discount'])/100)* $row1['quantity'];
                     $foods .= $row1['quantity'] . ' ';
@@ -60,6 +63,7 @@
                 $foods = rtrim($foods,',');
                 $prices = rtrim($prices,' ');
                 $prices = rtrim($prices,',');
+                echo '<table>';
                 echo '<tr>';
                     echo '<td>';
                         echo $ccid;

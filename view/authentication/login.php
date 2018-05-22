@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="../view/css/admin_staff.css">
+    <style>
+        body{
+            /* background-image: url("../view/cafe.jpg"); */
+
+        }
+    </style>
     <!-- <link rel="stylesheet" href="../view/css/customer.css"> -->
 </head>
 

@@ -18,13 +18,13 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="../../../view/css/major.css">
-    <link rel="stylesheet" href="../../../view/css/tables.css">
+    <link rel="stylesheet" href="../../view/css/major.css">
+    <link rel="stylesheet" href="../../view/css/tables.css">
 </head>
 
 <form action="" method="post"> 
     <br>
-    order id: <br> 
+    <b> enter order id: </b> <br> 
         <!-- <input type="text" name="id" id=""> -->
     
      <br>
@@ -32,6 +32,6 @@
     <select name = "order_id"> 
         <?php echo $option; ?>
     </select>
-    <br> <br>
+    <!-- <br> <br> -->
     <input type="submit" name="new_bill" id=""> <br>
 </form>

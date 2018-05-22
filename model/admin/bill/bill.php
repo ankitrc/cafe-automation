@@ -3,6 +3,7 @@
     // include_once '../../dbn.php';
     if(isset($_POST['bill'])){
         // echo "hey";
+        
         $table_no = $_POST['table_no'];
 
         $sql = "select cid from customer where table_no = '$table_no' and status = 0";
@@ -75,7 +76,7 @@
         
         
         
-        include '../../../model/admin/bill/change_status.php';
+        include '../../model/admin/bill/change_status.php';
     }
     else{
         // echo "helllooo";

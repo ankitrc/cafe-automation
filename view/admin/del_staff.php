@@ -11,7 +11,7 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="../../../view/css/major.css">
+    <link rel="stylesheet" href="../../view/css/major.css">
 </head>
 
 <body>
@@ -20,15 +20,15 @@
 
     <form action="" method="post"> 
         <br>
-        id: <br> 
+        <b> select staff name to delete: </b> <br> 
             <!-- <input type="text" name="id" id=""> -->
         
-        <br>
+        <!-- <br> -->
     
         <select name = "id"> 
             <?php echo $option; ?>
         </select>
-        <br> <br>
+        <!-- <br> <br> -->
         <input type="submit" name="del_staff_submit" id=""> <br>
     </form>
 

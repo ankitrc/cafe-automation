@@ -22,7 +22,7 @@
 </form> -->
 
 <head>
-    <link rel="stylesheet" href="../../../view/css/major.css">
+    <link rel="stylesheet" href="../../view/css/major.css">
     <style>
          /* select{
             width: 20%;
