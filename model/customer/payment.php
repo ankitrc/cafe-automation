@@ -2,7 +2,7 @@
 
     // include_once '../../dbn.php';
     if($_SESSION['table_no']==-1){
-        die('died in customer payment.php');
+        die('not authorized');
     }
 
     if(isset($_POST['done'])){

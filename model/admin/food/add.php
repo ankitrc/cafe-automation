@@ -3,7 +3,7 @@
     // echo $_SESSION['role'];
     // $role = $_SESSION['role'];
     if(!isset($_SESSION['role']) or $_SESSION['role'] !=1){
-        echo $_SESSION['role'];
+        // echo $_SESSION['role'];
         die('u r not authorized');
     }
     if(isset($_POST['add_food_submit'])){

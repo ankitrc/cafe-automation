@@ -1,10 +1,10 @@
 <?php
-    session_start();
+    // session_start();
     // echo $_SESSION['role'];
     // $role = $_SESSION['role'];
-    include_once '../dbn.php';
-    if($_SESSION['role']!=1){
-        include "../index.php";
+    // include_once '../dbn.php';
+    if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
+        die('you r not authorized');
     }
     else{
         if(isset($_POST['add_food_submit'])){

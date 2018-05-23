@@ -1,13 +1,8 @@
 <?php
 
-    if(!isset($_SESSION['role']){
-        die('not authorized');
-    }
-
-    if($_SESSION['role'] !=){
-        die('not authorized');
-    }
-
+if(!isset($_SESSION['role']) or $_SESSION['role'] != 1){
+    die('you r not authorized');
+}
     if($_POST['update_inventory']){
         $food_id = $_POST['food_id'];
 

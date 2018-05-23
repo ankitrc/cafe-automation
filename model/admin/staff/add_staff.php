@@ -3,10 +3,8 @@
     // echo $_SESSION['role'];
     // $role = $_SESSION['role'];
     // $_SESSION['role'] = 1;
-    include_once '../../dbn.php';
-    if($_SESSION['role']!=1){
-        // include "../index.php";
-        die('you are not authorized');
+    if(!isset($_SESSION['role']) or $_SESSION['role'] != 1){
+        die('you r not authorized');
     }
     else{
         echo "hey <br>";

@@ -5,9 +5,9 @@
     if(!isset($_SESSION['role'])){
         die('you r not authorized');
     }
-    if($_SESSION['role'] == -1){
-        die('you r not authorized');
-    }
+    // if($_SESSION['role'] == -1){
+    //     die('you r not authorized');
+    // }
     if($_SESSION['role'] == 1 or $_SESSION['role'] == 0){
         if(isset($_POST['logout'])){
             session_unset();

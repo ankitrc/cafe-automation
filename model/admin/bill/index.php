@@ -1,8 +1,8 @@
 <?php
 
     // session_start();
-    if(!isset($_SESSION['role'])){
-        die('died in bill index.php');
+    if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
+        die('you r not authorized');
     }
     if($_SESSION['act']=="bill"){
         if(!isset($_POST['bill'])){

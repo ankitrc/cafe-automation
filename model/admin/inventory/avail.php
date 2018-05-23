@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    // session_start();
+    if(!isset($_SESSION['role']) or $_SESSION['role'] != 1){
+        die('you r not authorized');
+    }
     if($_SESSION['role'] == 1){
        
         if(isset($_POST['avail'])){

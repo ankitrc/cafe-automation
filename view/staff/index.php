@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION['role']) or $_SESSION['role'] != 0){
+        die('not authorized');
+    }
+?>
+
 <head>
     <link rel="stylesheet" href="../../view/css/tables.css">
 </head>

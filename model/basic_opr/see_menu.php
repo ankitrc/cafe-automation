@@ -3,8 +3,8 @@
 
     
     if(!isset($_SESSION['role'])){
-        // die('you are not autorized');
-        header('location:../../control');
+        die('you are not autorized');
+        // header('location:../../control');
     }
 
     if($_SESSION['role'] == 0 or $_SESSION['role'] == 1){

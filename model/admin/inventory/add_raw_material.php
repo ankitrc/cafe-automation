@@ -1,8 +1,8 @@
 <?php
 
-    if($_SESSION['role'] != 1){
-        die('you are not authorized');
-    }
+if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
+    die('you r not authorized');
+}
 
     if(isset($_POST['add_raw_material'])){
         include_once '../../../model/db/dbn.php';

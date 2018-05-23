@@ -1,5 +1,9 @@
 <?php
 
+if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
+    die('you r not authorized');
+}
+
     // include_once '../../dbn.php';
     // die('jjjaa');
     if(isset($_POST['new_bill'])){

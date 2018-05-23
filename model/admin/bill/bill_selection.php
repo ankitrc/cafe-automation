@@ -1,5 +1,9 @@
 <?php
 
+if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
+    die('you r not authorized');
+}
+
     $get = "select table_no from customer where status = 0";
     $result = $conn->query($get);
     $option2 = '';

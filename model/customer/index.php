@@ -1,3 +1,3 @@
 <?php
-    echo "hello";
-    // include 'details.php';
+    // echo "hello";
+    // // include 'details.php';

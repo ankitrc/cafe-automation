@@ -1,8 +1,8 @@
 <?php
 
-    if($_SESSION['role'] != 1){
-        die('not autorize');
-    }
+if(!isset($_SESSION['role']) or $_SESSION['role'] != 1){
+    die('you r not authorized');
+}
 
     // include_once '../../dbn.php';
     if(isset($_POST['del_staff_submit'])){

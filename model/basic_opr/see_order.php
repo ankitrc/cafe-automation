@@ -2,8 +2,8 @@
     //security pending
     
     if(!isset($_SESSION['role'])){
-        header('location:../../');
-        // die('you are not autorized');
+        // header('location:../../');
+        die('you are not autorized');
     }
 
     if($_SESSION['role'] == 0 or $_SESSION['role'] == 1){

@@ -5,5 +5,5 @@
         die("connection failed ".$conn->connect_error);
     }
     else{
-        echo "connection established successfully <br>";
+        // echo "connection established successfully <br>";
     }

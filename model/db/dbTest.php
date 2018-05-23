@@ -1,11 +1,11 @@
 <?php
-    $conn = new mysqli('localhost','root','','cafe');
-    if($conn->connect_error){
-        die("connection failed ".$conn->connect_error);
-    }
-    else{
-        echo "connection established successfully <br>";
-    }
+    // $conn = new mysqli('localhost','root','','cafe');
+    // if($conn->connect_error){
+    //     die("connection failed ".$conn->connect_error);
+    // }
+    // else{
+    //     echo "connection established successfully <br>";
+    // }
 
     // $sql = "drop table tasks;";
     // $sql = "create database cafe";
@@ -33,15 +33,15 @@
     // $sql = "update  table_num set status = 1 where table_no = 2;";
     // $sql = "alter table cust_order add tab_no int(2);";
     // $sql = "INSERT INTO food VALUES(5,'d','alphabet',10,5)";
-    $sql = "truncate table cust_order";
-    if($conn->query($sql)){
-        echo "table created successfully <br>";
-    }
-    else{
-        die('failed to create table<br> '.$conn->error);
-    }
+    // $sql = "truncate table cust_order";
+    // if($conn->query($sql)){
+    //     echo "table created successfully <br>";
+    // }
+    // else{
+    //     die('failed to create table<br> '.$conn->error);
+    // }
 
-    $conn->close();
+    // $conn->close();
 
 
 ?>
