@@ -1,27 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <style>
-        button {
-            padding: 15px 25px;
-            font-size: 10px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #3CBC8D;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
+        input,select{
+            width:50%;
+        }
+        button{
+            width:25%;
         }
     </style>
 </head>
-
 <body>
-    <div>
+    <div class="container text-center">
         <form action="" method="post">
             <button name = "customer" type="submit">customer</button>    
             <button name = "admin" type="submit">login</button>
             
         </form>
     </div>
+</body>
+</html>
+<body>
+    
 </body>
 

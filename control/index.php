@@ -1,7 +1,20 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../view/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+</head>
+<body>
+
+    <?php
 
     session_start();
     require_once '../model/db/dbn.php';
+    // require '../view/major_glob.php';
     if(!isset($_SESSION['role']) or !isset($_SESSION['table_no'])){
         header('loacation : ../');
     }
@@ -35,6 +48,7 @@
                 require '../view/authentication/login.php'; 
             }
             else{
+                require '../model/customer/selection_table.php';
                 require '../view/customer/details.php';
                 
             }
@@ -57,3 +71,12 @@
             // die('not yet 66');
         }
     }
+
+    ?>
+
+    <script src="../view/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+

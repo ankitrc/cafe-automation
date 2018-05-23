@@ -3,7 +3,7 @@
     include_once '../model/db/dbn.php';
     if(isset($_POST['details_submit'])){
         $name = $_POST['cust_name'];
-        echo "hellllllllllo";
+        // echo "hellllllllllo";
         $mob = (int)$_POST['mob_no'];
         $table_no = (int)$_POST['table_no'];
         // echo "hellllllllllo";

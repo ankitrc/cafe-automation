@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../view/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../view/css/tables.css">
+</head>
+
+<body>
+    
+
+
 <?php
 session_start();
 // $_SESSION['role'] = 1;
@@ -6,7 +21,8 @@ if(!isset($_SESSION['role'])){
 }
 // include 'add_staff/logout.php';
 if($_SESSION['role']==1){
-    
+
+    // require '../../view/major_glob.php';
     include '../../view/admin/home.php';
     require_once '../../model/db/dbn.php';
     // require '../../model/basic_opr/see_order.php';
@@ -63,3 +79,10 @@ if($_SESSION['role']==1){
     }
     
 }
+
+?>
+    
+    <script src="../../view/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="../../view/bootstrap-3.3.7-dist/css/bootstrap.css"> -->
+
+</body>

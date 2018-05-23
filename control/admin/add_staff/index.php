@@ -13,6 +13,7 @@
         include 'add_staff.php';
     }
     else if($_SESSION['act']=="deleting_staff"){
+        require '../../model/admin/staff/staff_deletion_selection.php';
         include 'del_staff.php';
     }
     else if($_SESSION['act']=="bill"){
@@ -25,6 +26,7 @@
         include 'add_food.php';
     }
     else if($_SESSION['act']=="deleting_food"){
+        require '../../model/admin/food/food_deletion_selection.php';
         include 'del_food.php';
     }
 

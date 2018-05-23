@@ -30,7 +30,7 @@ if(isset($_POST['mon'])){
         die($conn->error);
     }
     if($result->num_rows > 0){
-
+        echo '<div class="container text-center" style="border:2px solid black;min-height:300px;with:70%;padding:30px; margin-top:30px;">';
         echo '<table>';
         echo '<tr>';
             echo '<th>';
@@ -95,15 +95,17 @@ if(isset($_POST['mon'])){
                 echo '</td>';
             echo '</tr>';
             echo '</table>';
-
+           
             
                         
 
         }
         // echo 'hey';
+        
 
     }
     echo '<b>total earnings of month '.$m2 . ' : '.$total.'</b>';
+    echo '</div>';
 }
 
 

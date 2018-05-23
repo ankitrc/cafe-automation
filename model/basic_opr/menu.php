@@ -16,7 +16,7 @@
         }
         
         // echo 'ff';
-
+        echo '<div class="container text-center" style="border:2px solid black;min-height:300px;with:70%;padding:30px; margin-top:30px;">';
         echo '<table>';
         echo '<tr>';
             echo '<td>';
@@ -41,4 +41,5 @@
             echo '</tr>';
         }
         echo '</table>';
+        echo '</div>';
     }

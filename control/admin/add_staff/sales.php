@@ -3,6 +3,8 @@
         die('not authorized');
     }
 
+    require '../../model/admin/sales/food_sale_selection.php';
+
 
     if(isset($_POST['mon'])){
         require '../../model/admin/sales/month.php';
@@ -15,7 +17,7 @@
     }
 
     if(isset($_POST['food_id_sales_submit'])){
-        require '../../model/admin/sales/food_id_sales.php';
+               require '../../model/admin/sales/food_id_sales.php';
     }
     if(isset($_POST['total_earning_submit'])){
         require '../../model/admin/sales/total_earning.php';

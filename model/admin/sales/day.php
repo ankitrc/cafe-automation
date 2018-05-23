@@ -17,7 +17,7 @@
             die($conn->error);
         }
         if($result->num_rows > 0){
-
+            echo '<div class="container text-center" style="border:2px solid black;min-height:300px;with:70%;padding:30px; margin-top:30px;">';
             echo '<table>';
             echo '<tr>';
                 echo '<th>';
@@ -83,7 +83,7 @@
                 echo '</tr>';
                 echo '</table>';
 
-                
+               
                             
 
             }
@@ -93,6 +93,6 @@
 
         echo '<b> tota earning of date '. $today .' : '.$total.'</b>';
 
-
+        echo "<div>";
 
     }
