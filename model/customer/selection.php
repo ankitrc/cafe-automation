@@ -48,7 +48,7 @@
             $option .='<label>'. '<td>'.$row['food_name'].'</td>'.'<td>'.$row['food_price'].'</td>'.'<td>'
             .$row['food_discount'].'</td>'.'<label>';
             $option .= '<td>';
-            $option .= '<input type="number" name= "food_qtt[]" value = "0">';
+            $option .= '<input type="number" min="0" name= "food_qtt[]" value = "0">';
             $option .= '</td>';
             $option .= "</tr>";
             }

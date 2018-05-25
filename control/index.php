@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../view/bootstrap-3.3.7-dist/css/bootstrap.css">
 
 </head>
-<body>
 
     <?php
 

@@ -1,5 +1,5 @@
 <?php
-
+    ob_start();
     if(!isset($_SESSION['role'])){
         header('location:../../');
     }
@@ -9,6 +9,10 @@
     }
     else{
         include '../../model/authentication/logout.php';
+        // ob_end_flush();
         header('location:../../');
+        // ob_end_flush();
+        // include '../../index.php';
     }
+ 
 ?>

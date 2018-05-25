@@ -24,7 +24,7 @@ if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
         // else{
         //     echo "failure <br>";
         // }
-        
+        $pds = '';
         $sql = "select cust_order.quantity as quantity , food.food_id as id,food.food_name as name,
             food.food_price as price,food.food_discount  as dsc 
             from food inner join
@@ -59,25 +59,29 @@ if(! isset($_SESSION['role']) or $_SESSION['role'] != 1){
             echo '</td>';
         echo '</tr>';
 
-
+        $pds .= '<table>';
         echo '<b>bill no.:' .$cid . '</b>';
         // echo 'food_name'. '  '.'food_price'.  '   ' . 'food_qtt'. '     ' . 'food_discount' . '  ' . "tot" .'<br>';
         while($row = $result->fetch_assoc()){
                     $food_new_price = $row['price']-($row['price']*$row['dsc'])/100;
-
+                    $pds .= '<tr>';
                     echo '<tr>';
                     $x = $row['quantity']*$food_new_price;
                     $total += $x;
                     echo '<td>' . $row['name']. '</td>' . '<td>' . $row['price']. '</td>' . '<td>' .  
                     $row['quantity']. '</td>'  .  '<td>' . $row['dsc'] . '</td>' . '<td>' .   $x .'</td>' ;
+                    $pds .= '<td>' . $row['name']. '</td>' . '<td>' . $row['price']. '</td>' . '<td>' .  
+                    $row['quantity']. '</td>'  .  '<td>' . $row['dsc'] . '</td>' . '<td>' .   $x .'</td>' ;
+            $pds .= '</tr>';
             
             echo '</tr>';
        
         }
+        $pds .= '</table>';
         echo '</table>';
         echo 'total : ';
         echo $total;
-
+        
 
     }
     else{

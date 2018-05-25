@@ -1,3 +1,7 @@
+<?php
+    ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +13,9 @@
     <link rel="stylesheet" href="../../view/css/tables.css">
 </head>
 
-<body style="padding:10px;>
-    
-
-
+<body style="padding:10px;">
 <?php
+// error_reporting(0);
 session_start();
 // $_SESSION['role'] = 1;
 if(!isset($_SESSION['role'])){
@@ -81,8 +83,7 @@ if($_SESSION['role']==1){
 }
 
 ?>
-    
     <script src="../../view/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="../../view/bootstrap-3.3.7-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../../view/bootstrap-3.3.7-dist/css/bootstrap.css">
 
 </body>

@@ -2,7 +2,7 @@
 
 if(isset($_POST['staff_submit'])){
     // extract($_POST);
-    echo 'hello';
+    // echo 'hello';
     $staff_id = (int)$_POST['id'];
     $staff_pass = $_POST['pass'];
     // echo "$staff_id <br>";
@@ -16,7 +16,7 @@ if(isset($_POST['staff_submit'])){
             // session_start();
             $_SESSION['id'] = $staff_id;
             $_SESSION['role'] = $row['role'];
-            echo $_SESSION['role'].'myrole';
+            // echo $_SESSION['role'].'myrole';
             // header('location:raw_material.php');
             
         }
