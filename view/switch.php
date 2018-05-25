@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <div class="container text-center">
+    <div class="container text-center" style="padding:10px;">
         <form action="" method="post">
             <button name = "customer" type="submit">customer</button>    
             <button name = "admin" type="submit">login</button>

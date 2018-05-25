@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../view/css/tables.css">
 </head>
 
-<body>
+<body style="padding:10px;>
     
 
 

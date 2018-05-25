@@ -5,10 +5,10 @@
 ?>
 
 <head>
-    <link rel="stylesheet" href="../../view/css/tables.css">
+    <!-- <link rel="stylesheet" href="../../view/css/tables.css"> -->
 </head>
 <body>
-    <div>
+    <div class="container text-center" style="padding-top:10px;">
         <form action="" method="post">
             <button name = "see_order" type="submit">see order</button>
             <button name = "see_offer" type="submit">see offer</button>
